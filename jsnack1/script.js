@@ -11,4 +11,4 @@ while ( sum < 50){
   i++;
 }
 
-console.log(array)
+console.log(array) 
