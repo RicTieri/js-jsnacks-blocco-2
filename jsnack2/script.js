@@ -2,7 +2,7 @@
 
 const names = ['carlo', 'carla', 'giuseppe', 'giuseppina', 'filippo', 'filippina'];
 const surnames = ['carlo', 'carla', 'giuseppe', 'giuseppina', 'filippo', 'filippina'];
-let maxListLength = 0
+let maxListLength = 0;
 let randomName = '';
 const randomList = [];
 
@@ -12,7 +12,7 @@ if(names.length < surnames.length){
   maxListLength = names.length
 }
 
-while (randomList.length <= maxListLength){
+while (randomList.length < maxListLength){
   randomName = names[Math.floor(Math.random() * names.length)] + ' ' + surnames[Math.floor(Math.random() * surnames.length)]
   randomList.push(randomName)
 }
