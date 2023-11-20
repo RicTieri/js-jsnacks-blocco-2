@@ -6,13 +6,6 @@ const input2 = parseInt(prompt('type a number'))
 
 console.log(numberDividend(input1, input2))
 
-
-
-
-
-
-
-
 function numberDivisibleBy(numOne, numTwo){
   if (numOne === numTwo){
     return numOne
