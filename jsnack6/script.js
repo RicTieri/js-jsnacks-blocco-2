@@ -3,16 +3,12 @@
 const userChoice = parseInt(prompt('type a number'));
 const squareWrapper = document.querySelector('section.wrapper');
 
+for (let i = 0; i < userChoice; i++) {
+  squareWrapper.appendChild(getSquare())
+}
 
-
-
-
-function getSquare(n){
+function getSquare(){
   const newSquare = document.createElement('div');
-  let i=0;
-  while (i=n){
-    newSquare.classList.add('square');
-    squareWrapper.appendChild(newSquare);
-    i++
-  }
+  newSquare.classList.add('square');
+  return newSquare
 }
