@@ -1,11 +1,18 @@
 const displayCount = document.getElementById('counter');
-const playBtn = document.getElementById('play');
+const startBtn = document.getElementById('start');
 const stopBtn = document.getElementById('stop');
-const second = 1000;
-const timing = second / 1000;
+const resetBtn = document.getElementById('reset');
+let clock;
 
-playBtn.addEventListener('click', function(){
-  setInterval(function () {displayCount.innerHTML+=timing}, second);
+startBtn.addEventListener('click', function(){
+ clock = setInterval(function () {displayCount.innerHTML = parseInt(displayCount.innerText, 10) + 1;}, 1000);
 })
 
-stopBtn.addEventListener('click', )
+stopBtn.addEventListener('click', function (){
+  clearInterval(clock);
+})
+
+resetBtn.addEventListener('click', function (){
+  clearInterval(clock);
+  displayCount.innerHTML = 00;
+})

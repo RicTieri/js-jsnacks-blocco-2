@@ -6,15 +6,28 @@
 
 .wrapper{
   padding-top: 5rem;
-  width: 80%;
-  margin: auto;
+  height: 100vh;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: lime;
 }
 
-.square{
-  width: 50px;
-  height: 50px;
-  background-color: blue;
-  border: 1px solid limegreen;
+#counter{
+  text-align: center;
+  font-size: 5rem;
+}
+
+.btn-container{
+  text-align: center;
+}
+
+button{
+  padding: .5rem 1rem;
+  border: none;
+  background-color: transparent;
+  color: lime;
+  cursor: pointer;
 }
